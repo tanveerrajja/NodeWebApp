@@ -59,4 +59,4 @@ jobs:
           app-name: 'TanveerRajjaEMPN1080'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AE3DC29EC7554570A0711A24DCF0C0E1 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C3BAF81DF824434B9393FCBDB4CBB356 }}
