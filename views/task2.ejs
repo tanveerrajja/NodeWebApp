@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 2</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Task 1</a> | <a href="/task2">Task 2</a> | <a href="/task3">Task 3</a>
+    </nav>
+  <h1>Task 2 - Customer Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Customer ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Email Address</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%customers.forEach(customer =>{ %>
+        <tr>
+          <td><%= customer.CustomerID %></td>
+          <td><%= customer.FirstName %></td>
+          <td><%= customer.LastName %></td>
+          <td><%= customer.EmailAddress %></td>
+          <td><%= customer.Phone %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>

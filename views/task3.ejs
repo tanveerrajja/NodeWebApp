@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <nav>
+        <a href="/">Task 1</a> | <a href="/task2">Task 2</a> | <a href="/task3">Task 3</a>
+    </nav>
+  </nav>
+  <h1>Task 3 - Product Data</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Product Name</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% products.forEach(product => { %>
+        <tr>
+          <td><%= product['Product Name'] %></td>
+          <td><%= product.Color %></td>
+          <td><%= product.Size %></td>
+          <td><%= product.Weight %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</body>
+</html>
