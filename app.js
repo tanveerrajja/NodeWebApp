@@ -1,9 +1,10 @@
+
 const express = require('express');
 const path = require('path');
 const sql = require('mssql');
 
 const app = express();
-const port = 3000;
+const port = 8080;
 
 // Database configuration
 const dbConfig = {
@@ -21,6 +22,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Route for home page with navbar
+
+
 app.get('/', (req, res) => {
   res.render('index');
 });
