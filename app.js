@@ -4,7 +4,7 @@ const path = require('path');
 const sql = require('mssql');
 
 const app = express();
-const port = 8080;
+const port = 3000;
 
 // Database configuration
 const dbConfig = {
